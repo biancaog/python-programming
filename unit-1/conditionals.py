@@ -48,7 +48,7 @@ for num in range(1,51):
     else:
         print (num)
 
-# if something falls into multiple categories... then order matters '''
+# if something falls into multiple categories... then order matters 
 
 
 name = 'Fizzbuzz'
@@ -57,5 +57,48 @@ if len(name) > 4:
     print ('longer than 4')
 
 if len(name) > 6:
-    print ('longer than 6')
+    print ('longer than 6') 
 
+
+#using 'and' and 'or' in our conditionals
+
+num = 15
+
+#dislay a message if number is add and alos less than 20 
+
+if num % 2 == 1 and num < 20:
+    print('odd number than than 20')
+else:
+    print('something else') 
+
+
+num = 6
+if num % 2 == 1:
+    print('Weird')
+elif num % 2 == 0 and num > 1 and num < 6:
+    print('Not Weird')
+elif num % 2 == 0 and num > 5 and num < 20:
+    print('Weird')
+elif num % 2 == 0 and num > 20:
+    print('Not Weird') '''
+
+#group print statement together 
+num = 6
+
+if num % 2 == 1 or (num % 2 == 0 and num > 5 and num < 20):
+    print('Weird')
+if (num % 2 == 0 and (num % 2 == 0 and num > 1 and num < 6)) or (num % 2 == 0 and num > 20):
+    print('Not Weird')
+
+#nested ifs aka an if within an if 
+city = 'Toronto'
+name = 'Bianca'
+if city == 'Toronto':
+    if name == 'Bianca':
+        print('Welcome, newcomer!!')
+    elif name == 'Connor':
+        print('Wassup!!')
+    else:
+        print(f'hello,{name}')
+else:
+    print('I\'m not familiar with your city')
